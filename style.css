@@ -1,0 +1,127 @@
+body {
+    background-color: #e20613; /* Vermelho institucional de fundo */
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.promo-container {
+    max-width: 550px;
+    width: 100%;
+}
+
+/* Card customizado com Sombra Realçada */
+.custom-card {
+    background-color: #e20613;
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    /* Sombra elegante em camadas (soft shadow) */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25), 
+                0 5px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    
+}
+
+/* Título Principal - Agora em vermelho escuro para contrastar no card branco */
+.title-yellow {
+    color: #FAED1F; 
+    font-weight: 900;
+    font-size: 2.6rem;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+}
+
+/* Subtítulo - Cor escura de alta legibilidade */
+.highlight-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+/* Descritivo menor */
+.description-text {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 440px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Container dos Botões */
+.badge-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Botões Oficiais das Lojas */
+.store-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    min-width: 175px;
+    text-align: left;
+    border: 1px solid #2d2d2d;
+}
+
+.store-badge:hover {
+    transform: translateY(-2px);
+    background-color: #212529;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.store-badge svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    fill: #ffffff;
+}
+
+.store-badge .badge-text {
+    line-height: 1.2;
+}
+
+.store-badge .badge-text span {
+    font-size: 0.65rem;
+    display: block;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.store-badge .badge-text strong {
+    font-size: 1.05rem;
+    display: block;
+    font-weight: 700;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 576px) {
+    .custom-card {
+        padding: 2rem 1.2rem;
+    }
+    .title-yellow {
+        font-size: 2rem;
+    }
+    .highlight-text {
+        font-size: 1.2rem;
+    }
+    .description-text {
+        font-size: 0.9rem;
+    }
+}
